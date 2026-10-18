@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>加拿大教育机构</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 25px;
+        }
+
+        /* 标题 */
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+            font-weight: 700;
+            color: #1f3c5b;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #777;
+            font-size: 16px;
+        }
+
+        /* 教师区域 */
+        .teachers {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+
+        .teacher-card {
+            background: white;
+            border-radius: 14px;
+            padding: 22px;
+            min-height: 360px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e8edf3;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+        }
+
+        .teacher-number {
+            font-size: 14px;
+            color: #6b8aa5;
+            margin-bottom: 8px;
+        }
+
+        .teacher-name {
+            font-size: 21px;
+            font-weight: bold;
+            color: #1f3c5b;
+            margin-bottom: 5px;
+        }
+
+        .teacher-title {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 18px;
+        }
+
+        /* 照片 */
+        .photo {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            background: #eef2f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9aa7b3;
+            font-size: 14px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 简历 */
+        .resume-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .resume {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* 教学课件 */
+        .courses {
+            margin-top: 45px;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .courses h2 {
+            margin-top: 0;
+            color: #1f3c5b;
+            font-size: 25px;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .course {
+            padding: 18px;
+            background: #f5f8fb;
+            border-radius: 10px;
+            border-left: 4px solid #4d83b8;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+
+        .course:hover {
+            background: #eaf1f7;
+        }
+
+        /* 手机 */
+        @media (max-width: 900px) {
+            .teachers {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .course-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .teachers {
+                grid-template-columns: 1fr;
+            }
+
+            .course-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>加拿大教育机构</h1>
+        <p>专业教师团队 · 优质教学资源</p>
+    </header>
+
+
+    <!-- 教师 -->
+    <section class="teachers">
+
+        <div class="teacher-card">
+            <div class="teacher-number">教师 1</div>
+            <div class="teacher-name">John</div>
+            <div class="teacher-title">教师</div>
+
+            <div class="photo">
+                照片
+            </div>
+
+            <div class="resume-title">简历</div>
+            <div class="resume">
+                教师简介内容<br>
+                教学经验与专业背景
+            </div>
+        </div>
+
+
+        <div class="teacher-card">
+            <div class="teacher-number">教师 2</div>
+            <div class="teacher-name">加拿大籍教师</div>
+            <div class="teacher-title">教师</div>
+
+            <div class="photo">
+                照片
+            </div>
+
+            <div class="resume-title">简历</div>
+            <div class="resume">
+                教师简介内容<br>
+                教学经验与专业背景
+            </div>
+        </div>
+
+
+        <div class="teacher-card">
+            <div class="teacher-number">教师 3</div>
+            <div class="teacher-name">Jane</div>
+            <div class="teacher-title">教师</div>
+
+            <div class="photo">
+                照片
+            </div>
+
+            <div class="resume-title">简历</div>
+            <div class="resume">
+                教师简介内容<br>
+                教学经验与专业背景
+            </div>
+        </div>
+
+
+        <div class="teacher-card">
+            <div class="teacher-number">教师 4</div>
+            <div class="teacher-name">Eve</div>
+            <div class="teacher-title">教师</div>
+
+            <div class="photo">
+                照片
+            </div>
+
+            <div class="resume-title">简历</div>
+            <div class="resume">
+                教师简介内容<br>
+                教学经验与专业背景
+            </div>
+        </div>
+
+
+        <div class="teacher-card">
+            <div class="teacher-number">教师 5</div>
+            <div class="teacher-name">教师姓名</div>
+            <div class="teacher-title">教师</div>
+
+            <div class="photo">
+                照片
+            </div>
+
+            <div class="resume-title">简历</div>
+            <div class="resume">
+                教师简介内容<br>
+                教学经验与专业背景
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 教学课件 -->
+    <section class="courses">
+
+        <h2>教学课件</h2>
+
+        <div class="course-list">
+            <div class="course">课件 1</div>
+            <div class="course">课件 2</div>
+            <div class="course">课件 3</div>
+            <div class="course">课件 4</div>
+            <div class="course">课件 5</div>
+            <div class="course">课件 6</div>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
